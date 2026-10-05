@@ -1,3 +1,5 @@
+import { Reveal } from './Reveal';
+
 export function Vision() {
   return (
     <section id="vision" className="relative py-24 md:py-32 border-t border-ink-border">
@@ -11,7 +13,7 @@ export function Vision() {
           A letter from Khoa.
         </h2>
 
-        <div className="mt-12 space-y-6 text-lg md:text-xl text-ink-text leading-relaxed font-display">
+        <Reveal className="mt-12 space-y-6 text-lg md:text-xl text-ink-text leading-relaxed font-display">
           <p>Hello Brothers and Sisters,</p>
 
           <p>
@@ -26,7 +28,7 @@ export function Vision() {
             get married, and have <span className="text-ember">eight children</span>.
           </p>
 
-          <p>I want a place for my kids to grow:</p>
+          <p>I want a place for my children to grow:</p>
 
           <ol className="space-y-3 pl-6 list-decimal marker:text-ember marker:font-mono marker:text-base">
             <li>
@@ -54,12 +56,19 @@ export function Vision() {
             If you see yourself building this with me in HCMC — come find me.
           </p>
 
+          <div className="pt-2 flex items-center gap-4">
+            <span className="h-px w-10 bg-ember/40" aria-hidden />
+            <span className="font-mono text-xs uppercase tracking-widest-plus text-ink-muted">
+              Signed
+            </span>
+          </div>
+
           <p className="text-ink-soft not-italic">
             Much love,
             <br />
             <span className="text-ink-bright">Khoa Van.</span>
           </p>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

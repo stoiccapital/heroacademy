@@ -1,3 +1,5 @@
+import { Reveal } from './Reveal';
+
 type Pillar = {
   num: string;
   kanji: string;
@@ -75,10 +77,10 @@ export function Pillars() {
         </p>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-px bg-ink-border rounded-2xl overflow-hidden border border-ink-border">
-          {pillars.map((p) => (
+          {pillars.map((p, i) => (
+            <Reveal key={p.name} delay={i * 80} className="bg-ink h-full">
             <article
-              key={p.name}
-              className="bg-ink p-8 md:p-10 flex flex-col gap-6 relative group hover:bg-ink-raised transition"
+              className="h-full p-8 md:p-10 flex flex-col gap-6 relative group hover:bg-ink-raised transition"
             >
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-4">
@@ -109,6 +111,7 @@ export function Pillars() {
                 ))}
               </ul>
             </article>
+            </Reveal>
           ))}
         </div>
       </div>

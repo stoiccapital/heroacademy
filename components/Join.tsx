@@ -1,3 +1,5 @@
+import { Reveal } from './Reveal';
+
 type Role = {
   title: string;
   body: string;
@@ -52,14 +54,13 @@ export function Join() {
         </p>
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-5">
-          {roles.map((r) => (
-            <div
-              key={r.title}
-              className="rounded-xl border border-ink-border bg-ink p-6 hover:border-ember/50 transition"
-            >
-              <h3 className="font-display text-2xl text-ink-bright">{r.title}</h3>
-              <p className="mt-3 text-ink-soft leading-relaxed">{r.body}</p>
-            </div>
+          {roles.map((r, i) => (
+            <Reveal key={r.title} delay={i * 70} className="h-full">
+              <div className="h-full rounded-xl border border-ink-border bg-ink p-6 hover:border-ember/50 transition">
+                <h3 className="font-display text-2xl text-ink-bright">{r.title}</h3>
+                <p className="mt-3 text-ink-soft leading-relaxed">{r.body}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
 

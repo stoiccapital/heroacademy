@@ -57,7 +57,7 @@ export function Hero() {
           {[
             { k: '4', v: 'pillars' },
             { k: '1', v: 'city — Saigon' },
-            { k: '8', v: 'kids to raise' },
+            { k: '8', v: 'children to raise' },
             { k: '∞', v: 'generations after' },
           ].map((s) => (
             <div key={s.v} className="border-l border-ink-border pl-4">

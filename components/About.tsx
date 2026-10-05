@@ -4,31 +4,16 @@ export function About() {
       <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-5 gap-12 md:gap-16 items-start">
         <div className="md:col-span-2">
           <div className="aspect-[4/5] rounded-2xl border border-ink-border bg-ink-raised relative overflow-hidden">
-            <div
-              className="absolute inset-0 opacity-40"
-              aria-hidden
-              style={{
-                background:
-                  'radial-gradient(400px 300px at 30% 20%, rgba(217,119,6,0.25), transparent 60%)',
-              }}
-            />
             <div className="absolute inset-0 grid place-items-center">
-              <div className="text-center">
-                <div className="font-display text-7xl text-ember">勇</div>
-                <div className="mt-4 font-display text-2xl text-ink-bright">Khoa Van</div>
-                <div className="mt-1 text-sm text-ink-muted font-mono">
+              <div className="text-center px-6">
+                <div className="font-display text-7xl md:text-8xl text-ember leading-none">勇</div>
+                <div className="mt-6 h-px w-10 bg-ember/40 mx-auto" />
+                <div className="mt-6 font-display text-2xl text-ink-bright">Khoa Van</div>
+                <div className="mt-2 text-xs uppercase tracking-widest-plus text-ink-muted font-mono">
                   Sydney → Saigon
                 </div>
               </div>
             </div>
-            <div
-              className="absolute inset-x-0 bottom-0 h-24"
-              aria-hidden
-              style={{
-                background:
-                  'linear-gradient(to top, rgba(10,10,10,0.9), transparent)',
-              }}
-            />
           </div>
         </div>
 
